@@ -14,20 +14,12 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-<build>
-<plugins>
-    <plugin>
-      <groupId>org.sonatype.plugins</groupId>
-      <artifactId>nexus-staging-maven-plugin</artifactId>
-      <version>1.6.6</version>
-      <extensions>true</extensions>
-      <configuration>
-        <serverId>nexus</serverId>
-        <nexusUrl>http://52.90.102.63:32768/</nexusUrl>
-      </configuration>
-    </plugin>
-</plugins>
-</build>
+<distributionManagement>
+  <snapshotRepository>
+    <id>snapshots</id>
+    <url>http://52.90.102.63:32768/content/repositories/snapshots</url>
+  </snapshotRepository>
+</distributionManagement>
 <settings>
   <servers>
     <server>
