@@ -20,6 +20,10 @@
     <url>http://52.90.102.63:32768/content/repositories/snapshots</url>
   </snapshotRepository>
 </distributionManagement>
+ <repository>
+    <id>releases</id>
+    <url>http://52.90.102.63:32768/content/repositories/releases</url>
+  </repository>
 <settings>
   <servers>
     <server>
