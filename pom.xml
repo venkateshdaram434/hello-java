@@ -14,6 +14,7 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+<build>
 <plugins>
     <plugin>
       <groupId>org.sonatype.plugins</groupId>
@@ -26,6 +27,7 @@
       </configuration>
     </plugin>
 </plugins>
+</build>
 <settings>
   <servers>
     <server>
