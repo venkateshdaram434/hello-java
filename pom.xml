@@ -14,4 +14,25 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+<plugins>
+    <plugin>
+      <groupId>org.sonatype.plugins</groupId>
+      <artifactId>nexus-staging-maven-plugin</artifactId>
+      <version>1.6.6</version>
+      <extensions>true</extensions>
+      <configuration>
+        <serverId>nexus</serverId>
+        <nexusUrl>http://52.90.102.63:32768/</nexusUrl>
+      </configuration>
+    </plugin>
+</plugins>
+<settings>
+  <servers>
+    <server>
+      <id>nexus</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+  </servers>
+</settings>
 </project>
